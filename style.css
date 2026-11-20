@@ -1,0 +1,93 @@
+
+/* MyLab - Temel sayfa tasarımı */
+
+/* Sayfanın genel görünümü */
+body {
+    background-color: #08111F;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Sitenin üst bölümü */
+header {
+    background-color: #10263A;
+    color: #00D9FF;
+}
+
+/* Ana başlık */
+h1 {
+    color: #00D9FF;
+}
+
+/* Bölüm başlıkları */
+h2 {
+    color: #00D9FF;
+}
+
+/* Menü bağlantıları */
+a {
+    color: #A4F4FF;
+}
+
+/* Sayfanın alt bölümü */
+footer {
+    background-color: #10263A;
+    color: #FFFFFF;
+}
+
+
+/* Sayfanın varsayılan boşluklarını düzenler */
+body {
+    margin: 0;
+}
+
+/* MyLab üst başlık alanı */
+header {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+/* Navigasyon menüsü */
+nav {
+    background-color: #0D1B2A;
+    padding: 15px;
+}
+
+/* Menü listesini yatay hizalar */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menü bağlantıları */
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Fare bağlantının üzerine geldiğinde */
+nav a:hover {
+    color: #00D9FF;
+}
+
+/* Sayfanın ana içeriği */
+main {
+    padding: 30px;
+}
+
+/* İçerik bölümleri arasındaki boşluk */
+section {
+    margin-bottom: 50px;
+}
+
+/* Alt bilgi alanı */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
