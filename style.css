@@ -91,3 +91,130 @@ footer {
     text-align: center;
 }
 
+
+/* ANA SAYFA - HERO SECTION */
+
+/* Futuristik karşılama alanı */
+.hero {
+    background-color: #08111F;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+/* Laboratuvar durum göstergesi */
+.hero-status {
+    color: #00D9FF;
+    letter-spacing: 3px;
+}
+
+/* Ana karşılama başlığı */
+.hero h2 {
+    font-size: 42px;
+    color: #FFFFFF;
+}
+
+/* Karşılama açıklamaları */
+.hero-content p {
+    line-height: 1.8;
+}
+
+/* Projeler bağlantısının buton görünümü */
+.hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background-color: #00D9FF;
+    color: #08111F;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Fare butonun üzerine geldiğinde */
+.hero-button:hover {
+    background-color: #A4F4FF;
+}
+
+
+/* HERO - İki sütunlu yerleşim */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Sol taraftaki tanıtım alanı */
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* Sağ taraftaki laboratuvar paneli */
+.lab-panel {
+    flex: 1;
+    max-width: 420px;
+    box-sizing: border-box;
+    background-color: #10263A;
+    border: 1px solid #00D9FF;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 0 25px rgba(0, 217, 255, 0.15);
+}
+
+/* Panelin üst durum göstergesi */
+.panel-status {
+    color: #00D9FF;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+/* Panel başlığı */
+.lab-panel h3 {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+/* Panel bilgi satırları */
+.panel-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #24536C;
+    font-size: 13px;
+}
+
+/* Bilgi satırlarının sağ tarafı */
+.panel-item span:last-child {
+    color: #00D9FF;
+    text-align: right;
+}
+
+/* Panel alt yazısı */
+.panel-footer {
+    color: #A4F4FF;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+/* Dar ekranlarda alt alta yerleşim */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .lab-panel {
+        width: 100%;
+    }
+}
+
+
