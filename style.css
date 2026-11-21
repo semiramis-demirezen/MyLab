@@ -218,3 +218,47 @@ footer {
 }
 
 
+
+/* PROJELERİM - KART TASARIMI */
+
+/* Proje kartlarını üç sütuna yerleştirir */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Her projenin kart görünümünü oluşturur */
+.project-grid article {
+    background-color: #10263A;
+    border: 1px solid #24536C;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Proje başlıklarının görünümü */
+.project-grid h3 {
+    color: #00D9FF;
+    font-size: 20px;
+}
+
+
+.project-grid p {
+    color:#FFFFFF;
+    line-height: 1.7;
+}
+
+/* mouse proje uzerine geldiginde */
+.project-grid article:hover {
+    border-color: #00D9FF;
+}
+
+/* dar ekranlarda kartlari alt alta yerlestir */
+@media (max-width:900px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
