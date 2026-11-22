@@ -262,3 +262,83 @@ footer {
 }
 
 
+
+/* YETENEKLERİM - TEKNOLOJİ KARTLARI */
+
+/* Yetenek kartlarını iki sütuna yerleştirir */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Her yetenek kategorisinin kart tasarımı */
+.skills-grid article {
+    background-color: #10263A;
+    border: 1px solid #24536C;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* Kart başlıkları */
+.skills-grid h3 {
+    color: #00D9FF;
+    font-size: 20px;
+}
+
+/* Kartların içindeki listeler */
+.skills-grid ul {
+    line-height: 2;
+    padding-left: 20px;
+}
+
+/* Fare kartın üzerine geldiğinde */
+.skills-grid article:hover {
+    border-color: #00D9FF;
+}
+
+/* Dar ekranlarda kartları alt alta dizer */
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* MOBİL UYUMLULUK - NAVİGASYON MENÜSÜ */
+
+/* Ekran genişliği 600px veya daha küçük olduğunda */
+@media (max-width: 600px) {
+
+    /* Menüye daha uygun boşluklar verir */
+    nav {
+        padding: 12px 8px;
+    }
+
+    /* Menü bağlantılarını gerektiğinde alt satıra geçirir */
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Küçük ekranlarda bağlantı yazılarını düzenler */
+    nav a {
+        font-size: 14px;
+    }
+
+    /* Ana içerik boşluklarını azaltır */
+    main {
+        padding: 15px;
+    }
+
+    /* Ana sayfa başlığını küçültür */
+    .hero h2 {
+        font-size: 30px;
+    }
+}
+
+
+
+
