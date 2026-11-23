@@ -341,4 +341,330 @@ footer {
 
 
 
+/* HAKKIMDA - PROFESYONEL LABORATUVAR TASARIMI */
 
+/* Bölümün gereğinden fazla genişlemesini önler */
+#hakkimda {
+    max-width: 1150px;
+    margin: 0 auto 70px;
+}
+
+/* Kısa tanıtım açıklaması */
+#hakkimda > p {
+    color: #B8D3E5;
+    line-height: 1.7;
+    max-width: 800px;
+}
+
+/* Eğitim ve odak alanları */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Daha kompakt kart görünümü */
+.about-card {
+    background-color: #10263A;
+    border: 1px solid #24536C;
+    border-left: 4px solid #00D9FF;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+/* Kart başlıkları */
+.about-card h3 {
+    color: #00D9FF;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+/* Eğitim açıklamaları */
+.about-card p {
+    color: #D2E2EA;
+    line-height: 1.6;
+}
+
+/* Odak alanlarını yatay etiketler olarak yerleştirir */
+.about-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Her teknoloji için küçük etiket */
+.about-card li {
+    background-color: #18344A;
+    color: #A4F4FF;
+    border: 1px solid #24536C;
+    border-radius: 6px;
+    padding: 9px 12px;
+    font-size: 14px;
+}
+
+/* Fare kartın üzerine geldiğinde */
+.about-card:hover {
+    border-color: #00D9FF;
+}
+
+/* Telefon görünümü */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* EĞİTİM KARTI - YENİ TASARIM */
+
+.education-card {
+    background: linear-gradient(135deg, #12324A, #0C1B2A);
+    border-left: 4px solid #00D9FF;
+}
+
+/* Küçük laboratuvar etiketi */
+.education-card .card-label {
+    color: #00D9FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Üniversite adı */
+.education-card .university-name {
+    color: #A4F4FF;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Bölüm bilgilerini ayrı satırlarda gösterir */
+.education-program {
+    padding: 15px 0;
+    border-top: 1px solid #24536C;
+}
+
+/* Ana dal ve çift ana dal etiketleri */
+.program-label {
+    display: inline-block;
+    background-color: #183F55;
+    color: #00D9FF;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Bölüm adları */
+.education-program h4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin: 12px 0 0;
+}
+
+
+
+/* ODAK ALANLARIM - LABORATUVAR PANELİ */
+
+/* İkinci kartın görünümü */
+.focus-card {
+    background: linear-gradient(135deg, #15263F, #0C1B2A);
+    border-left: 4px solid #A783F5;
+}
+
+/* Kartın üst etiketi */
+.focus-card .card-label {
+    color: #A783F5;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Kartın kısa açıklaması */
+.focus-description {
+    color: #B8D3E5;
+    line-height: 1.7;
+}
+
+/* Teknoloji etiketlerini yan yana dizer */
+.focus-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+/* Her teknoloji etiketi */
+.focus-list li {
+    background-color: #18344A;
+    color: #A4F4FF;
+    border: 1px solid #36516B;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+/* Panelin altındaki hedef yazısı */
+.focus-card .focus-footer {
+    color: #A783F5;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-top: 1px solid #36516B;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* HEDEFLERİM - MÜHENDİSLİK YOL HARİTASI */
+
+/* Bölümün üstündeki küçük etiket */
+#hedefler .section-label {
+    color: #00D9FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Hedef kartlarının yerleşimi */
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Her hedef kartının ortak tasarımı */
+.goal-card {
+    background-color: #10263A;
+    border: 1px solid #24536C;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+/* Kısa vadeli hedef kartı */
+.short-term {
+    border-top: 4px solid #00D9FF;
+}
+
+/* Uzun vadeli hedef kartı */
+.long-term {
+    border-top: 4px solid #A783F5;
+}
+
+/* Yol haritasındaki aşama numaraları */
+.goal-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Kısa vadeli kartın etiketi */
+.short-term .goal-number {
+    color: #00D9FF;
+}
+
+/* Uzun vadeli kartın etiketi */
+.long-term .goal-number {
+    color: #A783F5;
+}
+
+/* Kart başlıkları */
+.goal-card h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+/* Hedef listeleri */
+.goal-card ul {
+    line-height: 2.2;
+    padding-left: 22px;
+}
+
+/* Fare kartın üzerine geldiğinde */
+.short-term:hover {
+    border-color: #00D9FF;
+}
+
+.long-term:hover {
+    border-color: #A783F5;
+}
+
+/* Telefon ve dar ekranlarda tek sütun */
+@media (max-width: 900px) {
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+/* İLETİŞİM - LABORATUVAR PANELİ */
+
+/* İletişim bölümünün üst etiketi */
+#iletisim .section-label {
+    color: #00D9FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* İletişim paneli */
+.contact-panel {
+    background-color: #10263A;
+    border: 1px solid #24536C;
+    border-radius: 12px;
+    padding: 35px;
+    margin-top: 25px;
+}
+
+/* Küçük durum etiketi */
+.contact-label {
+    color: #00D9FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Panel başlığı */
+.contact-panel h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+/* Açıklama */
+.contact-panel p {
+    line-height: 1.7;
+}
+
+/* GitHub bağlantısı */
+.contact-button {
+    display: inline-block;
+    background-color: #00D9FF;
+    color: #08111F;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Fare bağlantının üzerine geldiğinde */
+.contact-button:hover {
+    background-color: #A4F4FF;
+}
+
+/* Küçük ekranlar */
+@media (max-width: 600px) {
+    .contact-panel {
+        padding: 20px;
+    }
+
+    .contact-panel h3 {
+        font-size: 21px;
+    }
+}
