@@ -1,16 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MyLab kişisel mühendislik portföyüm.">
     <title>MyLab | Kişisel Mühendislik Portföyüm</title>
+
+    <!-- css dosyasini baglar -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- javascript dosyasini baglar -->
     <script src="script.js" defer></script>
 </head>
 
 <body>
+
     <!-- sitenin ust bolumu -->
     <header>
         <h1>MyLab</h1>
@@ -25,46 +31,61 @@
             <li><a href="#projeler">Projelerim</a></li>
             <li><a href="#yetenekler">Yeteneklerim</a></li>
             <li><a href="#hedefler">Hedeflerim</a></li>
+            <li><a href="#asistan">MyLab Assistant</a></li>
             <li><a href="#iletisim">İletişim</a></li>
         </ul>
     </nav>
 
+    <!-- sayfanin ana icerigi -->
     <main>
-        <!-- ana sayfa ve laboratuvar paneli -->
+
+        <!-- ana sayfa -->
         <section id="anasayfa" class="hero">
+
+            <!-- sol taraftaki tanitim -->
             <div class="hero-content">
+
                 <p class="hero-status">● SYSTEM ONLINE</p>
+
                 <h2>Building Intelligent Systems.</h2>
 
                 <p>
-                    Merhaba! Ben Sakarya Üniversitesi'nde mühendislik
-                    eğitimi alan ve Edge AI, bilgisayarlı görü ve
-                    otonom sistemler alanlarında kendini geliştiren
-                    bir öğrenciyim.
+                    Merhaba! Ben Sakarya Üniversitesi'nde
+                    mühendislik eğitimi alan ve Edge AI,
+                    bilgisayarlı görü ve otonom sistemler
+                    alanlarında kendini geliştiren bir öğrenciyim.
                 </p>
 
                 <p>
-                    MyLab, projelerimi ve mühendislik yolculuğumu
-                    paylaştığım dijital laboratuvarım.
+                    MyLab, projelerimi ve mühendislik
+                    yolculuğumu paylaştığım dijital laboratuvarım.
                 </p>
 
                 <a href="#projeler" class="hero-button">
                     Projelerimi Keşfet
                 </a>
+
             </div>
 
+            <!-- sag taraftaki laboratuvar paneli -->
             <div class="lab-panel">
+
                 <p class="panel-status">● MYLAB CONTROL PANEL</p>
+
                 <h3>Engineering Workspace</h3>
 
                 <!-- dekoratif teknoloji gostergesi -->
                 <div class="lab-display">
+
                     <div class="lab-circle">
                         <span>AI</span>
                     </div>
+
                     <p>EDGE AI / RESEARCH</p>
+
                 </div>
 
+                <!-- panel bilgi satirlari -->
                 <div class="panel-item">
                     <span>ODAK ALANIM</span>
                     <span>EDGE AI</span>
@@ -80,27 +101,40 @@
                     <span>GELİŞTİRİLİYOR</span>
                 </div>
 
-                <p class="panel-footer">Explore. Learn. Build.</p>
+                <p class="panel-footer">
+                    Explore. Learn. Build.
+                </p>
+
             </div>
+
         </section>
 
         <!-- hakkimda -->
         <section id="hakkimda">
+
             <h2>Hakkımda</h2>
 
             <p>
-                Yazılım geliştirme, yapay zekâ ve otonom sistemlere
-                ilgi duyan bir mühendislik öğrencisiyim.
-                Amacım, öğrendiğim teorik bilgileri gerçek projelere
-                dönüştürmek.
+                Yazılım geliştirme, yapay zekâ ve otonom
+                sistemlere ilgi duyan bir mühendislik
+                öğrencisiyim. Amacım, öğrendiğim teorik
+                bilgileri gerçek projelere dönüştürmek.
             </p>
 
             <div class="about-grid">
+
                 <!-- egitim karti -->
                 <article class="about-card education-card">
-                    <p class="card-label">01 / ACADEMIC PROFILE</p>
+
+                    <p class="card-label">
+                        01 / ACADEMIC PROFILE
+                    </p>
+
                     <h3>Eğitimim</h3>
-                    <p class="university-name">Sakarya Üniversitesi</p>
+
+                    <p class="university-name">
+                        Sakarya Üniversitesi
+                    </p>
 
                     <div class="education-program">
                         <span class="program-label">ANA DAL</span>
@@ -111,11 +145,16 @@
                         <span class="program-label">ÇİFT ANA DAL</span>
                         <h4>Bilgisayar Mühendisliği</h4>
                     </div>
+
                 </article>
 
-                <!-- odak alanlari karti -->
+                <!-- teknik ilgi alanlari karti -->
                 <article class="about-card focus-card">
-                    <p class="card-label">02 / RESEARCH INTERESTS</p>
+
+                    <p class="card-label">
+                        02 / RESEARCH INTERESTS
+                    </p>
+
                     <h3>Odak Alanlarım</h3>
 
                     <p class="focus-description">
@@ -135,16 +174,21 @@
                     <p class="focus-footer">
                         HEDEF: AKILLI VE OTONOM SİSTEMLER
                     </p>
+
                 </article>
+
             </div>
+
         </section>
 
         <!-- projelerim -->
         <section id="projeler">
+
             <h2>Projelerim</h2>
 
-            <!-- kategori secimi -->
+            <!-- proje kategorisi secimi -->
             <div class="project-filter">
+
                 <label for="project-category">
                     Proje Kategorisi:
                 </label>
@@ -155,103 +199,145 @@
                     <option value="optimization">Optimizasyon</option>
                     <option value="vision">Görüntü İşleme</option>
                 </select>
+
             </div>
 
             <!-- proje kartlari -->
             <div class="project-grid">
+
+                <!-- web projesi -->
                 <article data-category="web">
+
                     <h3>MyLab</h3>
 
                     <p>
-                        Kişisel projelerimi, yeteneklerimi ve kariyer
-                        hedeflerimi paylaştığım portföy web uygulaması.
+                        Kişisel projelerimi, yeteneklerimi
+                        ve kariyer hedeflerimi paylaştığım
+                        portföy web uygulaması.
                     </p>
 
-                    <p>Teknolojiler: HTML, CSS, JavaScript</p>
+                    <p>
+                        Teknolojiler: HTML, CSS, JavaScript
+                    </p>
+
                     <p>Durum: Geliştiriliyor</p>
+
                 </article>
 
+                <!-- optimizasyon projesi -->
                 <article data-category="optimization">
+
                     <h3>Edge AI İHA Optimizasyonu</h3>
 
                     <p>
-                        Arama kurtarma görevlerinde kullanılan insansız
-                        hava araçları için uçuş hızı ve görüntü işleme
-                        parametrelerinin enerji kısıtları altında
-                        optimizasyonunu araştıran proje.
+                        Arama kurtarma görevlerinde kullanılan
+                        insansız hava araçları için uçuş hızı
+                        ve görüntü işleme parametrelerinin
+                        enerji kısıtları altında optimizasyonunu
+                        araştıran proje.
                     </p>
 
                     <p>
-                        Konular: Sayısal Analiz, Optimizasyon, Edge AI
+                        Konular: Sayısal Analiz,
+                        Optimizasyon, Edge AI
                     </p>
 
                     <p>Durum: Araştırma ve geliştirme</p>
+
                 </article>
 
+                <!-- goruntu isleme projesi -->
                 <article data-category="vision">
+
                     <h3>Otonom Canlı Tespit Sistemi</h3>
 
                     <p>
                         Görüntü işleme ve makine öğrenmesi
-                        yöntemleriyle arama kurtarma çalışmalarına
-                        yönelik canlı tespit sistemi araştırması.
+                        yöntemleriyle arama kurtarma
+                        çalışmalarına yönelik canlı tespit
+                        sistemi araştırması.
                     </p>
 
                     <p>
-                        Teknolojiler: Python, OpenCV, Random Forest
+                        Teknolojiler: Python, OpenCV,
+                        Random Forest
                     </p>
 
                     <p>Durum: Proje çalışması</p>
+
                 </article>
+
             </div>
+
         </section>
 
         <!-- yeteneklerim -->
         <section id="yetenekler">
+
             <h2>Yeteneklerim</h2>
 
             <div class="skills-grid">
+
+                <!-- programlama dilleri -->
                 <article>
+
                     <h3>Programlama Dilleri</h3>
+
                     <ul>
                         <li>C++</li>
                         <li>Python</li>
                         <li>JavaScript - Öğreniyorum</li>
                     </ul>
+
                 </article>
 
+                <!-- web teknolojileri -->
                 <article>
+
                     <h3>Web Teknolojileri</h3>
+
                     <ul>
                         <li>HTML5 - Öğreniyorum</li>
                         <li>CSS3 - Öğreniyorum</li>
                         <li>Responsive Tasarım - Öğreniyorum</li>
                     </ul>
+
                 </article>
 
+                <!-- gelistirme araclari -->
                 <article>
+
                     <h3>Geliştirme Araçları</h3>
+
                     <ul>
                         <li>Git ve GitHub - Öğreniyorum</li>
                         <li>Visual Studio Code</li>
                         <li>Linux</li>
                     </ul>
+
                 </article>
 
+                <!-- uzerinde calistigim alanlar -->
                 <article>
+
                     <h3>Çalışma Alanlarım</h3>
+
                     <ul>
                         <li>Makine Öğrenmesi</li>
                         <li>Görüntü İşleme</li>
                         <li>Robotik Sistemler</li>
                         <li>Edge AI</li>
                     </ul>
+
                 </article>
+
             </div>
+
         </section>
 
         <!-- hedeflerim -->
         <section id="hedefler">
+
             <p class="section-label">
                 03 / ENGINEERING ROADMAP
             </p>
@@ -259,14 +345,18 @@
             <h2>Hedeflerim</h2>
 
             <p>
-                Mühendislik eğitimim boyunca teorik bilgilerimi
-                gerçek projelerle desteklemeyi ve sürekli gelişmeyi
-                hedefliyorum.
+                Mühendislik eğitimim boyunca teorik
+                bilgilerimi gerçek projelerle desteklemeyi
+                ve sürekli gelişmeyi hedefliyorum.
             </p>
 
             <div class="goals-grid">
+
+                <!-- kisa vadeli hedefler -->
                 <article class="goal-card short-term">
+
                     <p class="goal-number">01 / ŞİMDİ</p>
+
                     <h3>Kısa Vadeli Hedeflerim</h3>
 
                     <ul>
@@ -275,10 +365,14 @@
                         <li>Makine öğrenmesi projeleri oluşturmak</li>
                         <li>İngilizce seviyemi geliştirmek</li>
                     </ul>
+
                 </article>
 
+                <!-- uzun vadeli hedefler -->
                 <article class="goal-card long-term">
+
                     <p class="goal-number">02 / GELECEK</p>
+
                     <h3>Uzun Vadeli Hedeflerim</h3>
 
                     <ul>
@@ -287,17 +381,100 @@
                         <li>Uluslararası projelerde çalışmak</li>
                         <li>Kendi teknoloji girişimimi kurmak</li>
                     </ul>
+
                 </article>
+
             </div>
+
+        </section>
+
+        <!-- mylab soru cevap asistani -->
+        <section id="asistan">
+
+            <p class="section-label">
+                04 / PORTFOLIO GUIDE
+            </p>
+
+            <h2>MyLab Assistant</h2>
+
+            <p>
+                Projelerim, eğitimim ve hedeflerim hakkında
+                bilgi almak için aşağıdaki sorulardan
+                birini seçebilirsiniz.
+            </p>
+
+            <!-- asistanin ana paneli -->
+            <div class="assistant-panel">
+
+                <!-- asistan basligi -->
+                <div class="assistant-header">
+                    <h3>MyLab Assistant</h3>
+                    <p>● HAZIR YANIT SİSTEMİ</p>
+                </div>
+
+                <!-- asistan cevap kutusu -->
+                <div
+                    class="assistant-message"
+                    id="assistant-answer"
+                    aria-live="polite">
+
+                    Merhaba! MyLab'e hoş geldiniz.
+                    Mühendislik yolculuğum hakkında
+                    ne öğrenmek istersiniz?
+
+                </div>
+
+                <!-- soru butonlari -->
+                <div class="assistant-questions">
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-question="education">
+                        Hangi bölümlerde okuyorsun?
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-question="projects">
+                        Hangi projeleri geliştiriyorsun?
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-question="interests">
+                        İlgi alanların neler?
+                    </button>
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-question="goals">
+                        Gelecek hedefin nedir?
+                    </button>
+
+                </div>
+
+            </div>
+
         </section>
 
         <!-- iletisim -->
         <section id="iletisim">
-            <p class="section-label">04 / CONNECT</p>
+
+            <p class="section-label">
+                05 / CONNECT
+            </p>
+
             <h2>İletişim</h2>
 
             <div class="contact-panel">
-                <p class="contact-label">● LET'S CONNECT</p>
+
+                <p class="contact-label">
+                    ● LET'S CONNECT
+                </p>
 
                 <h3>Birlikte yeni fikirler geliştirelim.</h3>
 
@@ -307,14 +484,20 @@
                     GitHub profilimi ziyaret edebilirsiniz.
                 </p>
 
-                <a href="https://github.com/semiramis-demirezen"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="contact-button">
+                <a
+                    href="https://github.com/semiramis-demirezen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-button">
+
                     GitHub Profilim
+
                 </a>
+
             </div>
+
         </section>
+
     </main>
 
     <!-- alt bilgi -->
@@ -322,5 +505,6 @@
         <p>MyLab - Kişisel Mühendislik Portföyüm</p>
         <p>HTML, CSS ve JavaScript ile geliştiriliyor.</p>
     </footer>
+
 </body>
 </html>
