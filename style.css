@@ -733,3 +733,252 @@ footer {
         max-width: 520px;
     }
 }
+
+/* projeler bolumunun yeni detaylari */
+
+/* bolum ust etiketi */
+#projeler .section-label {
+    color: #00D9FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* proje numaralari */
+.project-number {
+    color: #A783F5 !important;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* problem ve yaklasim basliklari */
+.project-grid h4 {
+    color: #A4F4FF;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* basliklardan sonraki aciklamalar */
+.project-grid h4 + p {
+    margin-top: 5px;
+}
+
+/* proje durum bilgisi */
+.project-grid .project-status {
+    color: #A4F4FF;
+    border-top: 1px solid #24536C;
+    padding-top: 15px;
+    margin-top: 25px;
+}
+
+/* github baglantisi */
+.project-link {
+    display: inline-block;
+    background-color: #00D9FF;
+    color: #08111F;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* fare baglantinin uzerine geldiginde */
+.project-link:hover {
+    background-color: #A4F4FF;
+}
+
+/* neden ben bolumu */
+
+/* bolumun ust etiketi */
+#neden-ben .section-label {
+    color: #00D9FF;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* bolumun kisa aciklamasi */
+.why-intro {
+    color: #B8D3E5;
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+/* uc karti yan yana yerlestirir */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* kartlarin ortak gorunumu */
+.why-card {
+    background-color: #10263A;
+    border: 1px solid #24536C;
+    border-top: 3px solid #00D9FF;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* kart basliklari */
+.why-card h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* kart aciklamalari */
+.why-card p {
+    color: #B8D3E5;
+    line-height: 1.7;
+}
+
+/* somut proje ornekleri */
+.why-card .why-evidence {
+    color: #00D9FF;
+    border-top: 1px solid #24536C;
+    padding-top: 15px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* fare kartin uzerine geldiginde */
+.why-card:hover {
+    border-color: #00D9FF;
+}
+
+/* tablet ve telefon gorunumu */
+@media (max-width: 900px) {
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* mylab mini rehber tasarimi */
+
+/* rehberi ekranin sag altina sabitler */
+.site-guide {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    z-index: 1000;
+}
+
+/* konusma balonu */
+.guide-bubble {
+    width: 240px;
+    box-sizing: border-box;
+    background-color: #10263A;
+    border: 1px solid #00D9FF;
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.15);
+}
+
+/* rehber mesaji */
+.guide-bubble p {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* konusma balonunu gizler */
+.guide-bubble[hidden] {
+    display: none;
+}
+
+/* gecici pixel karakter */
+.guide-avatar {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: #10263A;
+    color: #00D9FF;
+    border: 3px solid #00D9FF;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0 #A783F5;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* karakterin uzerine gelindiginde */
+.guide-avatar:hover {
+    background-color: #183F55;
+}
+
+/* klavye ile secildiginde */
+.guide-avatar:focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 5px;
+}
+
+/* telefon gorunumu */
+@media (max-width: 600px) {
+    .site-guide {
+        right: 12px;
+        bottom: 12px;
+        gap: 8px;
+    }
+
+    .guide-bubble {
+        width: 180px;
+        padding: 12px;
+    }
+
+    .guide-avatar {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+/* mini rehberin ekrandaki konumu */
+.site-guide {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    z-index: 1000;
+}
+
+/* pixel karakterin butonu */
+.guide-avatar {
+    width: 85px;
+    height: 100px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+/* pixel karakter gorseli */
+.guide-avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+/* telefon gorunumu */
+@media (max-width: 600px) {
+    .site-guide {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .guide-avatar {
+        width: 65px;
+        height: 78px;
+    }
+}
+

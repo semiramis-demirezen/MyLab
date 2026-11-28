@@ -85,3 +85,107 @@ questionButtons.forEach(function (button) {
     });
 
 });
+
+
+// ======================================
+// mylab mini rehber sistemi
+// ======================================
+
+// rehberin html elemanlarini bulur
+const guideMessage = document.getElementById("guide-message");
+const guideBubble = document.getElementById("guide-bubble");
+const guideToggle = document.getElementById("guide-toggle");
+
+// sayfadaki bolumleri bulur
+const guideSections = document.querySelectorAll("main section[id]");
+
+// her bolum icin bir mesaj tanimlar
+const guideMessages = {
+    anasayfa:
+        "Merhaba! MyLab'e hos geldin. Laboratuvarimi birlikte kesfedelim.",
+
+    hakkimda:
+        "Burada egitimimi ve ilgilendigim muhendislik alanlarini gorebilirsin.",
+
+    projeler:
+        "Projelerimi kesfet! Kategori filtresini kullanmayi unutma.",
+
+    "neden-ben":
+        "Bu bolumde nasil ogrendigimi ve projelerimi nasil gelistirdigimi anlatiyorum.",
+
+    yetenekler:
+        "Kullandigim ve ogrenmekte oldugum teknolojiler burada.",
+
+    hedefler:
+        "Gelecek icin planladigim muhendislik hedeflerine goz atabilirsin.",
+
+    asistan:
+        "MyLab Assistant ile hazir sorulara cevap bulabilirsin.",
+
+    iletisim:
+        "GitHub profilimden projelerimi daha ayrintili inceleyebilirsin."
+};
+
+// ekranda gorunen bolume gore mesaji degistirir
+let currentGuideSection = "anasayfa";
+
+function updateGuideMessage() {
+
+    // ekranin ustten yuzde kirk noktasini alir
+    const checkPosition = window.innerHeight * 0.4;
+
+    // bolumleri sirayla kontrol eder
+    guideSections.forEach(function (section) {
+
+        const position = section.getBoundingClientRect();
+
+        // kontrol noktasi bu bolumun icindeyse
+        if (
+            position.top <= checkPosition &&
+            position.bottom >= checkPosition
+        ) {
+            currentGuideSection = section.id;
+        }
+
+    });
+
+    // ilgili bolumun mesajini gosterir
+    guideMessage.textContent =
+        guideMessages[currentGuideSection] ||
+        guideMessages.anasayfa;
+}
+
+// sayfa kaydirildiginda mesaji gunceller
+window.addEventListener("scroll", updateGuideMessage);
+
+// ekran boyutu degistiginde de kontrol eder
+window.addEventListener("resize", updateGuideMessage);
+
+// sayfa ilk acildiginda mesaji gosterir
+updateGuideMessage();
+
+// karaktere tiklandiginda balonu acar veya kapatir
+guideToggle.addEventListener("click", function () {
+
+    guideBubble.hidden = !guideBubble.hidden;
+
+    // erisilebilirlik bilgisini gunceller
+    guideToggle.setAttribute(
+        "aria-expanded",
+        String(!guideBubble.hidden)
+    );
+
+    if (guideBubble.hidden) {
+        guideToggle.setAttribute(
+            "aria-label",
+            "Rehber mesajini goster"
+        );
+    } else {
+        guideToggle.setAttribute(
+            "aria-label",
+            "Rehber mesajini gizle"
+        );
+    }
+
+});
+
